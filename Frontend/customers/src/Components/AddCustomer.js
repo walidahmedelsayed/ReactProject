@@ -14,6 +14,10 @@ class AddCustomer extends Component {
         this.handleChange = this.handleChange.bind(this)
     }
 
+    componentDidMount() {
+        document.title = "Add Customer"
+    }
+
     handleSubmit(e) {
         e.preventDefault();
         let customer = {

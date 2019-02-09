@@ -16,6 +16,7 @@ class AllCustomers extends Component {
         })).catch(err => console.log(err))
     }
     componentDidMount() {
+        document.title = "Customers"
         this.getUsers();
     }
 
